@@ -20,8 +20,14 @@
 }
 
 .containerLogin {
-    background: white;
-    padding: 32px;
+    background-color: rgba(15, 10, 25, 0.6); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  
+    padding: 60px;
     border-radius: 12px;
 
     box-shadow:
@@ -30,6 +36,18 @@
     max-width: 600px;
 
     gap: 16px;
+}
+
+.loginTittle {
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;       
+  width: 100%;    
+  margin-top: 16px; 
 }
 
 

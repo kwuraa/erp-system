@@ -9,12 +9,15 @@ function Login() {
             <div className={styles.containerLogin}>
                 
             
-            <h1> ERP System</h1>
+            <h1 className={styles.loginTittle}> ERP System</h1>
             <form>
-                <Input type="text" placeholder="Usuario"/>
-                <Input type="password" placeholder="senha"/>
-               
+                <Input type="text" label="Usuario" />
+                <Input type="password" label="Senha"/>
+            
+            <div className={styles.buttonGroup}>
                 <Button text="Entrar" />
+                <Button text="Criar Conta" variant="secondary"/>
+            </div>
             </form>
             </div>
             

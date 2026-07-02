@@ -2,13 +2,16 @@ import styles from "./Input.module.css"
 
 interface InputProps {
     type?: "text" | "email" | "password";
-    placeholder?: string;
+    label?: string;
 }
 
 export function Input({
-    type = "text", placeholder 
+    type = "text", label 
 }: InputProps) {
     return (
-        <input className={styles.input} type={type} placeholder={placeholder} />
+    <div className={styles.inputGroup}>
+        <input className={styles.input} type={type} placeholder=" "/>
+        <label className={styles.floatingLabel}>{label}</label>
+    </div>
     )
 }
