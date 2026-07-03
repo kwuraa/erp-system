@@ -1,14 +1,7 @@
-import Login from "./pages/Login/Login.tsx"
+import { AppRoutes } from "./routes/AppRoutes";
 
 function App() {
-
-  return (
-    <>
-      <section id="center">
-        <Login/>
-      </section>
-    </>
-  )
+  return <AppRoutes />;
 }
 
-export default App
+export default App;

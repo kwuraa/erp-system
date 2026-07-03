@@ -1,8 +1,16 @@
 import styles from "./Login.module.css"
 import {Button} from "../../components/Button"
 import {Input} from "../../components/Input"
+import {useNavigate} from "react-router-dom"
 
-function Login() {
+ export function Login() {
+    const navigate = useNavigate();
+
+    function handleLogin() {
+        
+        navigate("/dashboard")
+    }
+
     return (
         <>
         <section className={styles.sectionLogin}>
@@ -15,7 +23,7 @@ function Login() {
                 <Input type="password" label="Senha"/>
             
             <div className={styles.buttonGroup}>
-                <Button text="Entrar" />
+                <Button text="Entrar" onClick={handleLogin}/>
                 <Button text="Criar Conta" variant="secondary"/>
             </div>
             </form>
@@ -25,5 +33,3 @@ function Login() {
         </>
     )
 }
-
-export default Login
