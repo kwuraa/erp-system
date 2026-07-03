@@ -1,16 +1,4 @@
 .sectionLogin {
-   background: 
-    radial-gradient(
-      circle at 80% 0%, 
-      rgba(76, 29, 149, 0.25) 0%, 
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 0% 90%, 
-      rgba(76, 29, 149, 0.15) 0%, 
-      transparent 50%
-    ),
-    #0b0813;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,11 +1,12 @@
 import { DashboardCard } from "../../components/Card/DashboardCard";
+import styles from "./Dashboard.module.css"
 
 export function Dashboard() {
     return (
         <>
             <h1>Dashboard</h1>
 
-            <div>
+            <div className={styles.containerCards}>
                 <DashboardCard
                     title="Clientes"
                     value={125}

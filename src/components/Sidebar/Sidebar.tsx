@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import style from "./Sidebar.module.css"
 
 const menu = [
     {
@@ -29,11 +30,11 @@ const menu = [
 
 export function Sidebar() {
     return(
-        <aside>
+        <aside className={style.sidebar}>
             <nav>
                 <ul>
                     {menu.map((item) => (
-                        <li key={item.path}>
+                        <li className={style.link} key={item.path}>
                             <NavLink to={item.path}>{item.title}</NavLink>
                         </li>
                     ))}

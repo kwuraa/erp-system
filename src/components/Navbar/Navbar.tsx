@@ -1,11 +1,14 @@
+import style from "./Navbar.module.css"
+
 export function Navbar(){
     return (
-        <header>
-            <a href="http://">ERP System</a> 
+        <header className={style.navbar}>
+            <h2>ERP System</h2>
 
-
-
-             <a href="http://">Kawamura</a> 
+            <div className={style.user}>
+                <span>Kawamura</span>
+                <div className={style.avatar}>K</div>
+            </div>
         </header>
     )
 }
