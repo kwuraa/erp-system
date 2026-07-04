@@ -11,12 +11,12 @@
 }
 
 .primary {
-    background-color: #a855f7; 
-    color: #ffffff;
+    background-color: var(--primary); 
+    color: var(--text);
 }
 
 .primary:hover {
-     background-color: #9333ea;
+     background-color: var(--primary-hover);
 }
 
 .primary:active {
@@ -25,12 +25,13 @@
 
 .secondary {
   background-color: transparent;
-  color: #a855f7;
-  border: 1px solid #a855f7;
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .secondary:hover {
-  background-color: rgba(168, 85, 247, 0.1);
+  background-color: var(--primary-hover);
+  color: var(--text);
 }
 
 .secondary:active {

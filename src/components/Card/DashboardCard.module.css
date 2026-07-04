@@ -1,6 +1,6 @@
 .cards {
-    background-color: #161224;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 30px;
     
@@ -14,5 +14,12 @@
 
     box-sizing: border-box;
 
-    color: #fff;
+    color: var(--text);
+    transition: transform .3s, border-color .3s;
+}
+
+.cards:hover {
+    border: 1px solid var(--primary-hover);
+    box-shadow: 0 0 8px var(--text-secondary);
+    transform: translateY(-2px);
 }

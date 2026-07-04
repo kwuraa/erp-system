@@ -1,3 +1,22 @@
+:root {
+    --background: #0f0b1d;
+    --surface: #171326;
+    --surface-hover: #221c38;
+
+    --primary: #7c3aed;
+    --primary-hover: #6d28d9;
+
+    --text: #ffffff;
+    --text-secondary: #a8a8b3;
+
+    --border: #2b2540;
+
+    --success: #22c55e;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+}
+
+
 * {
     font-family: 'Fira Code', monospace;
 }

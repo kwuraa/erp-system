@@ -8,10 +8,10 @@
 }
 
 .containerLogin {
-    background-color: rgba(15, 10, 25, 0.6); 
+    background-color: var(--background); 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px); 
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border);
     border-radius: 12px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   
@@ -27,7 +27,7 @@
 }
 
 .loginTittle {
-  color: #fff;
+  color: var(--text);
   padding-bottom: 50px;
 }
 

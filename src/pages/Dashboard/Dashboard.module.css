@@ -15,5 +15,5 @@
 }
 
 * {
-    color: #fff;
+    color: var(--text);
 }
